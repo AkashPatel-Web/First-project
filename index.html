@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio-player</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <div id="player">
+           <div id="upload-con">
+            <img src="/image/music.jpg"  id="music">
+            <input type="file" accept="audio/*" id="upload-input" multiple="true">
+           </div>
+            <div id="content">
+                <marquee>
+                    <h1 id="title">Intro to Music name</h1>
+                </marquee>
+                <p id="size">Size : 00.00 MB</p>
+                <div id="progress-info">
+                    <span id="curr-duration">00:00</span>
+                    <div id="progress">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <span id="full-duration">00:00</span>
+                </div>
+                <div id="controls">
+                    <button id="volume-btn" class="toolbar">
+                        <div id="volume-box">
+                            <input type="range" id="volume" min="'0" max="1" step="0.1" />
+                        </div>
+                        <i class="ri-volume-up-line" id="mute-icon"></i>
+                    </button>
+                    <button id="backward-btn" class="toolbar">
+                        <i class="ri-arrow-left-s-fill"></i>
+                    </button>
+                    <button id="play-btn" class="toolbar">
+                        <i class="ri-play-circle-line" id="play-icon"></i>
+                    </button>
+                    <button id="forward-btn" class="toolbar">
+                        <i class="ri-arrow-right-s-fill"></i>
+                    </button>
+                    <button id="loop-btn" class="toolbar">
+                        <i class="ri-repeat-2-line" id="loop-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
